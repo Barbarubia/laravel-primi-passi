@@ -19,4 +19,19 @@ Route::get('/', function () {
         'mondo'     => 'World',
     ];
     return view('home', $parametri);
-});
+})->name('home');
+
+Route::get('/about', function () {
+    $parametri = [
+        'message' => 'Stai visualizzando la pagina "About"'
+    ];
+    return view('about', $parametri);
+})->name('about');
+
+Route::get('/contacts', function () {
+    $parametri = [
+        'message' => 'Stai visualizzando la pagina "Contacts"'
+    ];
+    return view('contacts', $parametri);
+})->name('contacts');
+
