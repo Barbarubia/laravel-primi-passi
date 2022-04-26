@@ -7,6 +7,6 @@
     <title>Laravel-Primi-Passi - Home</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>{{ $saluto . ' ' . $mondo }}</h1>
 </body>
 </html>

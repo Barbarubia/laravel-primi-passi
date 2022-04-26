@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $parametri = [
+        'saluto'    => 'Hello',
+        'mondo'     => 'World',
+    ];
+    return view('home', $parametri);
 });
